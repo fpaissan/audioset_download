@@ -19,7 +19,8 @@ from functools import partial
 import multiprocessing_logging
 import pafy
 
-from errors import SubprocessError, FfmpegValidationError, FfmpegIncorrectDurationError
+from errors import SubprocessError, FfmpegValidationError, \
+                   FfmpegIncorrectDurationError, FfmpegUnopenableFileError
 from log import init_file_logger, init_console_logger
 from utils import run_command, is_url, get_filename, \
     get_subset_name, get_media_filename, HTTP_ERR_PATTERN
@@ -286,6 +287,15 @@ def ffmpeg(ffmpeg_path, input_path, output_path, input_args=None,
                 output_args[duration_idx] = str(float(output_args[duration_idx]) + duration_diff)
 
             LOGGER.warning(str(e) +'; Retrying...')
+            continue
+
+        except FfmpegUnopenableFileError as e:
+            last_err = e
+            # Always remove unopenable files
+            if os.path.exists(output_path):
+                os.remove(output_path)
+            # Retry if the output did not validate
+            LOGGER.info('ffmpeg output file "{}" could not be opened: {}. Retrying...'.format(output_path, e.open_error))
             continue
 
         except FfmpegValidationError as e:
@@ -874,7 +884,6 @@ def download_audioset(data_dir, ffmpeg_path, ffprobe_path, eval_segments_path,
         init_file_logger(LOGGER, log_path=log_path)
     multiprocessing_logging.install_mp_handler()
     LOGGER.debug('Initialized logging.')
-
 
     download_subset(eval_segments_path, data_dir, ffmpeg_path, ffprobe_path,
                     num_workers, **ffmpeg_cfg)

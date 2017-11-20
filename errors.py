@@ -23,6 +23,7 @@ class FfmpegValidationError(Exception):
     """
     pass
 
+
 class FfmpegIncorrectDurationError(FfmpegValidationError):
     """
     Exception object that is raised when `ffmpeg` output has an expected duration
@@ -34,3 +35,14 @@ class FfmpegIncorrectDurationError(FfmpegValidationError):
         msg = "Output at {} was expected to be duration {} seconds, but got {} seconds"
         msg = msg.format(filepath, target_duration, actual_duration)
         super(FfmpegIncorrectDurationError, self).__init__( msg, *args)
+
+
+class FfmpegUnopenableFileError(FfmpegValidationError):
+    """
+    Exception object that is raised when a file produced by `ffmpeg` cannot be opened
+    """
+    def __init__(self, filepath, e, *args):
+        self.filepath = filepath
+        self.open_error = e
+        msg = "Output at {} could not be opened: {}".format(filepath, str(e))
+        super(FfmpegValidationError, self).__init__( msg, *args)
