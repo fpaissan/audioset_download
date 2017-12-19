@@ -16,7 +16,7 @@ Modules and scripts for downloading Google's
   `<PROJECT DIR>/bin/miniconda`. You can find a `python` executable at
   `<PROJECT DIR>/bin/miniconda/bin/python`.
   * Example: `./setup.sh`
-  
+
 * If you would like to work with your existing working environment, it should
   satisfy the following requirements:
   * [Python 3](https://www.python.org/downloads/) and dependencies
@@ -30,7 +30,7 @@ Modules and scripts for downloading Google's
   * [`sox`](http://sox.sourceforge.net/)
     * On Mac, can be installed with `brew install sox`
     * On Ubuntu/Debian, can be installed with `apt-get install sox`
-   
+
 
 ## Running
 
@@ -67,8 +67,8 @@ This can be run as a batch of SLURM jobs
     (`$DATADIR`). Update any other configurations, such as email notifications
     and memory usage as it fits your use case.
   * Example: `sbatch --array=1-10 audiosetdl-job-array.s`
-  
-  
+
+
 ## Examples
 Examples can be found in the `notebooks` directory of this repository.
 
@@ -80,3 +80,8 @@ Examples can be found in the `notebooks` directory of this repository.
 * Need to sign in to view
 * Video no longer exists
 * Copyright takedown
+
+
+## Kinetics Dataset
+This script can also be used to download the [Kinetics dataset](https://deepmind.com/research/open-source/open-source-datasets/kinetics/). Running `kinetics/filter_subset.sh <filter_list> <kinetics_subset_csv> <output_file>` will filter the given Kinetics subset csv file to contain only the classes in the given filter list, and put it in a format that is compatible with this script. `kinetics/filter_classes.txt` is provided as an example, and filters what seems to be close to what is
+used in Look, Listen and Learn ([Arandjelović, R., Zisserman, A. 2017](https://arxiv.org/pdf/1705.08168.pdf)). Once you run it on all of the subset .csv files, you can provide those to the scripts instead of the AudioSet .csv files. Note that because the test labels are withheld, the .csv for the test set will be empty.
