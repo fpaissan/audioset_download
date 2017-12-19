@@ -1,8 +1,9 @@
 import json
 import os.path
 import sox
+import soundfile as sf
 
-from errors import FfmpegValidationError, FfmpegIncorrectDurationError
+from errors import FfmpegValidationError, FfmpegIncorrectDurationError, FfmpegUnopenableFileError
 from utils import run_command
 
 
@@ -57,6 +58,12 @@ def validate_audio(audio_filepath, audio_info, end_past_video_end=False):
         error_msg = 'Output file {} does not exist.'.format(audio_filepath)
         raise FfmpegValidationError(error_msg)
 
+    # Check to see if we can open the file
+    try:
+        sf.read(audio_filepath)
+    except Exception as e:
+        raise FfmpegUnopenableFileError(audio_filepath, e)
+
     sox_info = sox.file_info.info(audio_filepath)
 
     # If duration specifically doesn't match, catch that separately so we can
@@ -91,6 +98,21 @@ def validate_video(video_filepath, ffprobe_path, video_info, end_past_video_end=
         video_info:      Video info dictionary
                          (Type: str)
     """
+    import skvideo
+    import skvideo.io
+
+    if not os.path.exists(video_filepath):
+        error_msg = 'Output file {} does not exist.'.format(video_filepath)
+        raise FfmpegValidationError(error_msg)
+
+    skvideo.setFFmpegPath(os.path.dirname(ffprobe_path))
+
+    # Check to see if we can open the file
+    try:
+        skvideo.io.vread(video_filepath)
+    except Exception as e:
+        raise FfmpegUnopenableFileError(video_filepath, e)
+
     ffprobe_info = ffprobe(ffprobe_path, video_filepath)
     if not ffprobe_info:
         error_msg = 'Could not analyse {} with ffprobe'
