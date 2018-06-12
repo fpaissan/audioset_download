@@ -1,6 +1,6 @@
 youtube-dl==2017.9.15
 pafy==0.5.3.1
 multiprocessing-logging==0.2.4
-pysox==1.3.3
+sox==1.3.3
 sk-video==1.1.8
 PySoundFile==0.9.0.post1
