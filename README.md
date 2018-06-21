@@ -27,6 +27,7 @@ Modules and scripts for downloading Google's
   * [`ffmpeg`](https://www.ffmpeg.org/)
     * On Mac, can be installed with `brew install ffmpeg`
     * On Ubuntu/Debian, can be installed with `apt-get install ffmpeg`
+      * NOTE: on versions of Ubuntu prior to 15.04 ("Vivid Vervet") [ffmpeg may point to a Libav binary](http://stackoverflow.com/a/9477756/2007700) which is not the correct binary. If you are using anaconda, you can install the correct version by calling `conda install -c conda-forge ffmpeg`. Otherwise, you can [obtain a static binary from the ffmpeg website](https://ffmpeg.org/download.html).
   * [`sox`](http://sox.sourceforge.net/)
     * On Mac, can be installed with `brew install sox`
     * On Ubuntu/Debian, can be installed with `apt-get install sox`
