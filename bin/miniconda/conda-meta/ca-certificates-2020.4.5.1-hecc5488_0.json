@@ -1,0 +1,48 @@
+{
+  "build": "hecc5488_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/ca-certificates-2020.4.5.1-hecc5488_0",
+  "features": "",
+  "files": [
+    "ssl/cacert.pem",
+    "ssl/cert.pem"
+  ],
+  "fn": "ca-certificates-2020.4.5.1-hecc5488_0.tar.bz2",
+  "license": "ISC",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/ca-certificates-2020.4.5.1-hecc5488_0",
+    "type": 1
+  },
+  "md5": "ca3b1983633df5494cc2776cb1d4b41f",
+  "name": "ca-certificates",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/ca-certificates-2020.4.5.1-hecc5488_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "ssl/cacert.pem",
+        "path_type": "hardlink",
+        "sha256": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "sha256_in_prefix": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "size_in_bytes": 284099
+      },
+      {
+        "_path": "ssl/cert.pem",
+        "path_type": "softlink",
+        "sha256": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "size_in_bytes": 284099
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9d92c684e9ce8118b42c52631b476ebe189fdfef354b3390fab79fa34c5f409d",
+  "size": 149934,
+  "subdir": "linux-64",
+  "timestamp": 1586119584338,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2020.4.5.1-hecc5488_0.tar.bz2",
+  "version": "2020.4.5.1"
+}

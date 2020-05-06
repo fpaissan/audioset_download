@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: sk-video
+Version: 1.1.8
+Summary: Video Processing in Python
+Home-page: http://scikit-video.org/
+Author: ('Todd Goodall',)
+Author-email: info@scikit-video.org
+License: BSD
+Download-URL: https://github.com/scikit-video/scikit-video
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+This library provides easy access to common as well as
+state-of-the-art video processing routines. Check out the
+website for more details.
+
+
+

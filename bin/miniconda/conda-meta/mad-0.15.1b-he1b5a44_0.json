@@ -1,0 +1,74 @@
+{
+  "build": "he1b5a44_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/mad-0.15.1b-he1b5a44_0",
+  "features": "",
+  "files": [
+    "include/mad.h",
+    "lib/libmad.a",
+    "lib/libmad.so",
+    "lib/libmad.so.0",
+    "lib/libmad.so.0.2.1"
+  ],
+  "fn": "mad-0.15.1b-he1b5a44_0.tar.bz2",
+  "license": "GPL",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/mad-0.15.1b-he1b5a44_0",
+    "type": 1
+  },
+  "md5": "bd26c10304012e0f81cc2cd57a34f274",
+  "name": "mad",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/mad-0.15.1b-he1b5a44_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/mad.h",
+        "path_type": "hardlink",
+        "sha256": "e48f9224a40b4f9614d2651f1de298a391737a4f65df8fa64186768005995d36",
+        "sha256_in_prefix": "e48f9224a40b4f9614d2651f1de298a391737a4f65df8fa64186768005995d36",
+        "size_in_bytes": 27125
+      },
+      {
+        "_path": "lib/libmad.a",
+        "path_type": "hardlink",
+        "sha256": "b5df56d8107c4bdac8f2ecfc1cf42d37ca385759d85a6c0c4f156223b9ed4cc6",
+        "sha256_in_prefix": "b5df56d8107c4bdac8f2ecfc1cf42d37ca385759d85a6c0c4f156223b9ed4cc6",
+        "size_in_bytes": 145900
+      },
+      {
+        "_path": "lib/libmad.so",
+        "path_type": "softlink",
+        "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+        "size_in_bytes": 140688
+      },
+      {
+        "_path": "lib/libmad.so.0",
+        "path_type": "softlink",
+        "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+        "size_in_bytes": 140688
+      },
+      {
+        "_path": "lib/libmad.so.0.2.1",
+        "path_type": "hardlink",
+        "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+        "sha256_in_prefix": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+        "size_in_bytes": 140688
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a26510b641f85dc1d6295329c86e54e2d489c56b1f22df1b3d899b840a57f7ea",
+  "size": 113231,
+  "subdir": "linux-64",
+  "timestamp": 1564676554271,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/mad-0.15.1b-he1b5a44_0.tar.bz2",
+  "version": "0.15.1b"
+}

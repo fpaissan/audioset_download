@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "hecc5488_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2020.4.5.1-hecc5488_0.tar.bz2",
+  "license": "ISC",
+  "md5": "ca3b1983633df5494cc2776cb1d4b41f",
+  "name": "ca-certificates",
+  "platform": "linux",
+  "sha256": "9d92c684e9ce8118b42c52631b476ebe189fdfef354b3390fab79fa34c5f409d",
+  "size": 149934,
+  "subdir": "linux-64",
+  "timestamp": 1586119584338,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2020.4.5.1-hecc5488_0.tar.bz2",
+  "version": "2020.4.5.1"
+}

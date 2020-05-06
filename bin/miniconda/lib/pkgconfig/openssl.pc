@@ -1,0 +1,9 @@
+prefix=/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.1.1g
+Requires: libssl libcrypto

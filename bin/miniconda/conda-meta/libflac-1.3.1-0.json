@@ -1,0 +1,303 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/yaafe/linux-64",
+  "constrains": [],
+  "depends": [
+    "libogg 1.3.*"
+  ],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/libflac-1.3.1-0",
+  "features": "",
+  "files": [
+    "bin/flac",
+    "bin/metaflac",
+    "include/FLAC++/all.h",
+    "include/FLAC++/decoder.h",
+    "include/FLAC++/encoder.h",
+    "include/FLAC++/export.h",
+    "include/FLAC++/metadata.h",
+    "include/FLAC/all.h",
+    "include/FLAC/assert.h",
+    "include/FLAC/callback.h",
+    "include/FLAC/export.h",
+    "include/FLAC/format.h",
+    "include/FLAC/metadata.h",
+    "include/FLAC/ordinals.h",
+    "include/FLAC/stream_decoder.h",
+    "include/FLAC/stream_encoder.h",
+    "lib/libFLAC++.la",
+    "lib/libFLAC++.so",
+    "lib/libFLAC++.so.6",
+    "lib/libFLAC++.so.6.3.0",
+    "lib/libFLAC.la",
+    "lib/libFLAC.so",
+    "lib/libFLAC.so.8",
+    "lib/libFLAC.so.8.3.0",
+    "lib/pkgconfig/flac++.pc",
+    "lib/pkgconfig/flac.pc",
+    "share/aclocal/libFLAC++.m4",
+    "share/aclocal/libFLAC.m4",
+    "share/doc/flac-1.3.1/FLAC.tag",
+    "share/doc/flac-1.3.1/html/changelog.html",
+    "share/doc/flac-1.3.1/html/developers.html",
+    "share/doc/flac-1.3.1/html/documentation.html",
+    "share/doc/flac-1.3.1/html/documentation_bugs.html",
+    "share/doc/flac-1.3.1/html/documentation_example_code.html",
+    "share/doc/flac-1.3.1/html/documentation_format_overview.html",
+    "share/doc/flac-1.3.1/html/documentation_tools.html",
+    "share/doc/flac-1.3.1/html/documentation_tools_flac.html",
+    "share/doc/flac-1.3.1/html/documentation_tools_metaflac.html",
+    "share/doc/flac-1.3.1/html/faq.html",
+    "share/doc/flac-1.3.1/html/favicon.ico",
+    "share/doc/flac-1.3.1/html/features.html",
+    "share/doc/flac-1.3.1/html/flac.css",
+    "share/doc/flac-1.3.1/html/format.html",
+    "share/doc/flac-1.3.1/html/id.html",
+    "share/doc/flac-1.3.1/html/images/logo.svg",
+    "share/doc/flac-1.3.1/html/images/logo130.gif",
+    "share/doc/flac-1.3.1/html/index.html",
+    "share/doc/flac-1.3.1/html/license.html",
+    "share/doc/flac-1.3.1/html/ogg_mapping.html",
+    "share/man/man1/flac.1",
+    "share/man/man1/metaflac.1"
+  ],
+  "fn": "libflac-1.3.1-0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/libflac-1.3.1-0",
+    "type": 1
+  },
+  "md5": "b9e9b6bd70da6b7b5570b4b504cc8418",
+  "name": "libflac",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/libflac-1.3.1-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/flac",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/metaflac",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC++/all.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC++/decoder.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC++/encoder.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC++/export.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC++/metadata.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/all.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/assert.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/callback.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/export.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/format.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/metadata.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/ordinals.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/stream_decoder.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/FLAC/stream_encoder.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/libFLAC++.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "31edaeaedccce7c9b98004103447e998948a2f5d8e16f09feded0f3e0e891dbc"
+      },
+      {
+        "_path": "lib/libFLAC++.so",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "lib/libFLAC++.so.6",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "lib/libFLAC++.so.6.3.0",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/libFLAC.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "f6c4aec5279ccd323baedbe3ae03da0697b84beb13b3c221b9821f3bde0e701b"
+      },
+      {
+        "_path": "lib/libFLAC.so",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "lib/libFLAC.so.8",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "lib/libFLAC.so.8.3.0",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/pkgconfig/flac++.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "6eefc18b0c837330c6a50e8419e7fb68dd7df08b632c8a2a2631919e14badc7d"
+      },
+      {
+        "_path": "lib/pkgconfig/flac.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256_in_prefix": "4387af953ef2313b84d916e9e54a2a8e8b3fc157c5f1f0fe282122033d23109e"
+      },
+      {
+        "_path": "share/aclocal/libFLAC++.m4",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/aclocal/libFLAC.m4",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/FLAC.tag",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/changelog.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/developers.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_bugs.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_example_code.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_format_overview.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_tools.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_tools_flac.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/documentation_tools_metaflac.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/faq.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/favicon.ico",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/features.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/flac.css",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/format.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/id.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/images/logo.svg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/images/logo130.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/index.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/license.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/doc/flac-1.3.1/html/ogg_mapping.html",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/man/man1/flac.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/man/man1/metaflac.1",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "libflac",
+  "size": 540805,
+  "subdir": "linux-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/yaafe/linux-64/libflac-1.3.1-0.tar.bz2",
+  "version": "1.3.1"
+}

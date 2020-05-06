@@ -1,0 +1,23 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "certifi-2019.11.28-py37_0.conda",
+  "legacy_bz2_md5": "f745ae532410217479464b2b0725e183",
+  "legacy_bz2_size": 159914,
+  "license": "ISC",
+  "md5": "38d2ab3843ec44c5975a17eabe686d2b",
+  "name": "certifi",
+  "sha256": "b2aa759f28289aa20f4b0bd1faae84ab24f5aacb9d44b3a3f55acc84c0a0b700",
+  "size": 156390,
+  "subdir": "linux-64",
+  "timestamp": 1575390189519,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/certifi-2019.11.28-py37_0.conda",
+  "version": "2019.11.28"
+}

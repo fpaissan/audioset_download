@@ -1,0 +1,11 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [],
+  "license": "BSD3",
+  "name": "libogg",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "1.3.2"
+}

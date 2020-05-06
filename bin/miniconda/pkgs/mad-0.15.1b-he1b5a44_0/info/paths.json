@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "_path": "include/mad.h",
+      "path_type": "hardlink",
+      "sha256": "e48f9224a40b4f9614d2651f1de298a391737a4f65df8fa64186768005995d36",
+      "size_in_bytes": 27125
+    },
+    {
+      "_path": "lib/libmad.a",
+      "path_type": "hardlink",
+      "sha256": "b5df56d8107c4bdac8f2ecfc1cf42d37ca385759d85a6c0c4f156223b9ed4cc6",
+      "size_in_bytes": 145900
+    },
+    {
+      "_path": "lib/libmad.so",
+      "path_type": "softlink",
+      "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+      "size_in_bytes": 140688
+    },
+    {
+      "_path": "lib/libmad.so.0",
+      "path_type": "softlink",
+      "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+      "size_in_bytes": 140688
+    },
+    {
+      "_path": "lib/libmad.so.0.2.1",
+      "path_type": "hardlink",
+      "sha256": "b468f5eb187ad680ab69522fbaf10f80186360da31a058db445fce0acf28fa5b",
+      "size_in_bytes": 140688
+    }
+  ],
+  "paths_version": 1
+}

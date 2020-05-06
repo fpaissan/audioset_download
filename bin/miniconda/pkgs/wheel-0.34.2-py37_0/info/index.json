@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "setuptools"
+  ],
+  "license": "MIT",
+  "name": "wheel",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1580834163987,
+  "version": "0.34.2"
+}

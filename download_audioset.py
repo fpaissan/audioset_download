@@ -19,6 +19,8 @@ from functools import partial
 import multiprocessing_logging
 import pafy
 
+import random
+
 from errors import SubprocessError, FfmpegValidationError, \
                    FfmpegIncorrectDurationError, FfmpegUnopenableFileError
 from log import init_file_logger, init_console_logger
@@ -27,7 +29,7 @@ from utils import run_command, is_url, get_filename, \
 from validation import validate_audio, validate_video
 
 LOGGER = logging.getLogger('audiosetdl')
-LOGGER.setLevel(logging.DEBUG)
+LOGGER.setLevel(logging.ERROR)
 
 EVAL_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/eval_segments.csv'
 BALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/balanced_train_segments.csv'
@@ -193,7 +195,7 @@ def parse_arguments():
                         default=False,
                         help='Prints verbose info to stdout')
 
-    parser.add_argument('data_dir',
+    parser.add_argument('--data-dir',
                         action='store',
                         type=str,
                         help='Path to directory where AudioSet data will be stored')
@@ -250,7 +252,7 @@ def ffmpeg(ffmpeg_path, input_path, output_path, input_args=None,
     last_err = None
     for attempt in range(num_retries):
         try:
-            args = [ffmpeg_path] + input_args + inputs + output_args + [output_path, '-loglevel', log_level]
+            args = [ffmpeg_path] + input_args + inputs + ['-strict', '-2'] + output_args + [output_path, '-loglevel', log_level]
             run_command(args)
 
             # Validate if a callback was passed in
@@ -391,6 +393,8 @@ def download_yt_video(ytid, ts_start, ts_end, output_dir, ffmpeg_path, ffprobe_p
     # Compute some things from the segment boundaries
     duration = ts_end - ts_start
 
+    print("PROCESSING ", ytid)
+
     # Make the output format and video URL
     # Output format is in the format:
     #   <YouTube ID>_<start time in ms>_<end time in ms>.<extension>
@@ -514,10 +518,73 @@ def download_yt_video(ytid, ts_start, ts_end, output_dir, ffmpeg_path, ffprobe_p
             error_msg = 'Cannot find merged video for {} ({} - {}) at {}'
             LOGGER.error(error_msg.format(ytid, ts_start, ts_end, merge_video_filepath))
 
+        # extract1sec(video_filepath, audio_filepath)
+    
+    print("VIDEO LENGTH BEFORE: ", get_video_len(video_filepath))
+    extract1sec(ffmpeg_path, video_filepath, audio_filepath)
+    print("VIDEO LENGTH AFTER: ", get_video_len(video_filepath))
+
+
     LOGGER.info('Downloaded video {} ({} - {})'.format(ytid, ts_start, ts_end))
 
     return video_filepath, audio_filepath
 
+import subprocess
+
+def get_samplingrate(audio_file):
+    if not os.path.exists(filename):
+        sys.stderr.write("ERROR: filename %r was not found!" % (filename,))
+        return -1
+    try:
+       sampling_rate = int(subprocess.check_output(['sox', '-r', audio_file]).decode())
+
+       return sampling_rate
+
+    except:
+        return -1
+    # ffmpeg -ss 00:00:00 -i /media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/AudioSet/data/balanced_train_segments/video/-30H9V1IKps_6000_16000.mp4 -to 00:00:02 -c copy /media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/AudioSet/data/balanced_train_segments/video/-30H9V1IKps_6000_16000.mp4
+    # /usr/bin/ffmpeg -ss 7 -i ./AudioSet/data/balanced_train_segments/video/-0mjrMposBM_80000_90000.mp4 -strict -2 -c copy -t 1 ./AudioSet/data/balanced_train_segments/video/-0mjrMposBM_80000_90000.mp4
+
+import numpy as np
+def get_video_len(video_file):
+    result = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', video_file], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    return int(np.floor(float(result.stdout)))
+
+def stupid_check(num):
+    if(num != 10):
+        return '0' + str(num)
+
+    return str(num)
+
+def extract1sec(ffmpeg_path, video_filepath, audio_filepath):
+    # Takes as argument video and audio file. Extract 1 s from video and the corresponding from audio.
+    # The sec to be extracted is chosen random in a range from 0 to 9 (with 1 s step).
+
+    # First check for sampling rate and duration of files. If it doesn't match, we'll ignore the couple.
+    # if(get_samplingrate(audio_file) != 48000 or )
+
+    if(get_video_len(video_filepath) >= 1):
+        selected_sec = random.randrange(0, get_video_len(video_filepath) - 1, 1)
+    else:
+        return
+
+    # print(video_filepath, audio_filepath)
+
+    # Extract video: ffmpeg -i -0DdlOuIFUI_50000_60000.mp4 -ss 00:00:01 -t 1 -async 1
+    args = ['ffmpeg'] + ['-i', video_filepath, '-ss', '00:00:' + stupid_check(selected_sec), '-t', '1', '-async', '1', video_filepath, '-y']
+    print("VIDEO CUTTING COMMAND: ", ' '.join(args))
+    run_command(args)
+
+
+    # Extract audio
+    quit()
+
+    # ffmpeg -i --aaILOrkII_200000_210000.flac -strict -2 -ss 20 -to 40 -c copy 1sec--aaILOrkII_200000_210000.flac
+
+
+    # ffmpeg_path, input_path, output_path, input_args=None,
+           # output_args=None, log_level='error', num_retries=10,
+           # validation_callback=None, validation_args=None
 
 def segment_mp_worker(ytid, ts_start, ts_end, data_dir, ffmpeg_path,
                       ffprobe_path, **ffmpeg_cfg):
@@ -885,12 +952,12 @@ def download_audioset(data_dir, ffmpeg_path, ffprobe_path, eval_segments_path,
     multiprocessing_logging.install_mp_handler()
     LOGGER.debug('Initialized logging.')
 
-    download_subset(eval_segments_path, data_dir, ffmpeg_path, ffprobe_path,
-                    num_workers, **ffmpeg_cfg)
+    # download_subset(eval_segments_path, data_dir, ffmpeg_path, ffprobe_path,
+    #                 num_workers, **ffmpeg_cfg)
     download_subset(balanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
                     num_workers, **ffmpeg_cfg)
-    download_subset(unbalanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
-                    num_workers, **ffmpeg_cfg)
+    # download_subset(unbalanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
+    #                 num_workers, **ffmpeg_cfg)
 
 
 if __name__ == '__main__':

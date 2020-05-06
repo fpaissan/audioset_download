@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda
+exec_prefix=/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda
+libdir=/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/lib
+includedir=/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.4
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lrt  

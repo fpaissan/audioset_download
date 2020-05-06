@@ -1,0 +1,179 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/tqdm-4.42.1-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/LICENCE",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/entry_points.txt",
+    "lib/python3.7/site-packages/tqdm-4.42.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/tqdm/__init__.py",
+    "lib/python3.7/site-packages/tqdm/__main__.py",
+    "lib/python3.7/site-packages/tqdm/_main.py",
+    "lib/python3.7/site-packages/tqdm/_monitor.py",
+    "lib/python3.7/site-packages/tqdm/_tqdm.py",
+    "lib/python3.7/site-packages/tqdm/_tqdm_gui.py",
+    "lib/python3.7/site-packages/tqdm/_tqdm_notebook.py",
+    "lib/python3.7/site-packages/tqdm/_tqdm_pandas.py",
+    "lib/python3.7/site-packages/tqdm/_utils.py",
+    "lib/python3.7/site-packages/tqdm/_version.py",
+    "lib/python3.7/site-packages/tqdm/auto.py",
+    "lib/python3.7/site-packages/tqdm/autonotebook.py",
+    "lib/python3.7/site-packages/tqdm/cli.py",
+    "lib/python3.7/site-packages/tqdm/contrib/__init__.py",
+    "lib/python3.7/site-packages/tqdm/contrib/concurrent.py",
+    "lib/python3.7/site-packages/tqdm/contrib/itertools.py",
+    "lib/python3.7/site-packages/tqdm/gui.py",
+    "lib/python3.7/site-packages/tqdm/keras.py",
+    "lib/python3.7/site-packages/tqdm/notebook.py",
+    "lib/python3.7/site-packages/tqdm/std.py",
+    "lib/python3.7/site-packages/tqdm/tqdm.1",
+    "lib/python3.7/site-packages/tqdm/utils.py",
+    "lib/python3.7/site-packages/tqdm/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/__main__.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_main.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_monitor.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_notebook.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_pandas.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/_version.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/auto.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/autonotebook.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/cli.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/contrib/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/contrib/__pycache__/concurrent.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/contrib/__pycache__/itertools.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/gui.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/keras.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/notebook.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/std.cpython-37.pyc",
+    "lib/python3.7/site-packages/tqdm/__pycache__/utils.cpython-37.pyc",
+    "bin/tqdm"
+  ],
+  "fn": "tqdm-4.42.1-py_0.conda",
+  "legacy_bz2_md5": "c7c673eb96db957727a878bb2aaa5bc0",
+  "legacy_bz2_size": 57135,
+  "license": "MPLv2.0, MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/tqdm-4.42.1-py_0",
+    "type": 1
+  },
+  "md5": "157e22a5e3c4d2270fb1b59343c097eb",
+  "name": "tqdm",
+  "noarch": "python",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/tqdm-4.42.1-py_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/__main__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_main.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_monitor.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_notebook.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_tqdm_pandas.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_utils.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/_version.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/auto.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/autonotebook.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/cli.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/contrib/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/contrib/__pycache__/concurrent.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/contrib/__pycache__/itertools.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/gui.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/keras.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/notebook.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/std.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tqdm/__pycache__/utils.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/tqdm",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "tqdm==4.42.1=py_0",
+  "sha256": "13bfd8e54d20a8e71cf078284762157681a0fee6939d01af605f8de167a79d5b",
+  "size": 56853,
+  "subdir": "noarch",
+  "timestamp": 1581352969092,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/tqdm-4.42.1-py_0.conda",
+  "version": "4.42.1"
+}

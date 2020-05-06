@@ -1,0 +1,25 @@
+{
+  "build": "h7b6447c_4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "ca-certificates",
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "openssl-1.1.1d-h7b6447c_4.conda",
+  "legacy_bz2_md5": "c9ba30858153e243b46bc8ade5a6e53a",
+  "legacy_bz2_size": 3928607,
+  "license": "OpenSSL",
+  "license_family": "Apache",
+  "md5": "048319376adb5d3a2e023a805bf121b3",
+  "name": "openssl",
+  "sha256": "1d429ed37c08ad08f86bd821fca70f9e0f1cbf5f02ca9ba57e9c0834ccbf63fc",
+  "size": 2637883,
+  "subdir": "linux-64",
+  "timestamp": 1581354302002,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/openssl-1.1.1d-h7b6447c_4.conda",
+  "version": "1.1.1d"
+}

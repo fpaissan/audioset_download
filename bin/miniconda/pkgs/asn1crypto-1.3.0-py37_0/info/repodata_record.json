@@ -1,0 +1,23 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "asn1crypto-1.3.0-py37_0.conda",
+  "legacy_bz2_md5": "ec6a30a2313781b3c71d5561d351b608",
+  "legacy_bz2_size": 165950,
+  "license": "MIT",
+  "md5": "b0a648e6f2c275333e6a72f210ffa220",
+  "name": "asn1crypto",
+  "sha256": "802477786c7e8479c20fcb4bd63eba0acff1f0befa086a0a4fa6dbb744708d31",
+  "size": 168008,
+  "subdir": "linux-64",
+  "timestamp": 1578427420462,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/asn1crypto-1.3.0-py37_0.conda",
+  "version": "1.3.0"
+}

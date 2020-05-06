@@ -1,0 +1,17 @@
+bin/play
+bin/rec
+bin/sox
+bin/soxi
+include/sox.h
+lib/libsox.a
+lib/libsox.so
+lib/libsox.so.3
+lib/libsox.so.3.0.0
+lib/pkgconfig/sox.pc
+share/man/man1/play.1
+share/man/man1/rec.1
+share/man/man1/sox.1
+share/man/man1/soxi.1
+share/man/man3/libsox.3
+share/man/man7/soxeffect.7
+share/man/man7/soxformat.7

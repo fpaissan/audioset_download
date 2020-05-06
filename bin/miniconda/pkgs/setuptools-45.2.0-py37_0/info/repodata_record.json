@@ -1,0 +1,25 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "certifi >=2016.9.26",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "setuptools-45.2.0-py37_0.conda",
+  "legacy_bz2_md5": "f2ce672ac87a68517e79c6f0720bca05",
+  "legacy_bz2_size": 678815,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "167f9e97c2b2d6f701dde06dced6a405",
+  "name": "setuptools",
+  "sha256": "242b6738625bb73a8867baa70018586abc360f9117b2d5f5e2d3b6d0961120b0",
+  "size": 523224,
+  "subdir": "linux-64",
+  "timestamp": 1581351356158,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/setuptools-45.2.0-py37_0.conda",
+  "version": "45.2.0"
+}

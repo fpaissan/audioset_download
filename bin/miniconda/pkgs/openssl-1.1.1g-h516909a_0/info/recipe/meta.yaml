@@ -1,0 +1,61 @@
+# This file created by conda-build 3.19.2
+# ------------------------------------------------
+
+package:
+    name: openssl
+    version: 1.1.1g
+source:
+    patches:
+        - 0001-Don-t-use-USE_BCRYPTGENRANDOM-for-VS-older-than-2015.patch
+    sha256: ddb04774f1e32f0c49751e21b67216ac87852ceb056b75209af2443400636d46
+    url: http://www.openssl.org/source/openssl-1.1.1g.tar.gz
+build:
+    no_link: lib/libcrypto.so.1.1
+    number: 0
+    run_exports:
+        - openssl >=1.1.1g,<1.1.2a
+    string: h516909a_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 0_gnu
+        - binutils_impl_linux-64 2.34 h53a641e_0
+        - binutils_linux-64 2.34 hc952b39_18
+        - gcc_impl_linux-64 7.3.0 hd420e75_5
+        - gcc_linux-64 7.3.0 h553295d_18
+        - ld_impl_linux-64 2.34 h53a641e_0
+        - libgcc-ng 9.2.0 h24d8f2e_2
+        - libgomp 9.2.0 h24d8f2e_2
+        - libstdcxx-ng 9.2.0 hdf63c60_2
+        - make 4.3 h516909a_0
+        - perl 5.26.2 h516909a_1006
+    host:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 0_gnu
+        - libgcc-ng 9.2.0 h24d8f2e_2
+        - libgomp 9.2.0 h24d8f2e_2
+    run:
+        - ca-certificates
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - touch checksum.txt
+        - openssl sha256 checksum.txt
+about:
+    dev_url: https://github.com/openssl/openssl
+    doc_url: https://www.openssl.org/docs/man1.1.1/
+    home: http://www.openssl.org/
+    license: OpenSSL
+    license_family: Apache
+    license_file: LICENSE
+    summary: OpenSSL is an open-source implementation of the SSL and TLS protocols
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - carlodri
+        - jakirkham
+        - jjhelmus
+        - msarahan
+        - ocefpaf
+        - pelson

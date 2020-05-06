@@ -1,0 +1,8 @@
+{
+  "description": "Free Lossless Audio Codec.",
+  "doc_url": "https://wiki.xiph.org/",
+  "home": "https://www.xiph.org/",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "summary": "Flac audio format"
+}

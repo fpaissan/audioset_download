@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "he1b5a44_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "GPL",
+  "name": "mad",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1564676554271,
+  "version": "0.15.1b"
+}

@@ -1,0 +1,46 @@
+# This file created by conda-build 1.21.14+0.g4dfebe9.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Sat Dec 24 02:10:08 2016
+# ------------------------------------------------
+
+package:
+    name: libflac
+    version: 1.3.1
+source:
+    fn: flac-1.3.1.tar.gz
+    sha256: e0c23c92af0aac830683a6ab6784dd0c11aaf04249709b9d600675b3b2441c3e
+    url: https://github.com/xiph/flac/archive/1.3.1.tar.gz
+build:
+    features: ''
+    number: '0'
+requirements:
+    build:
+        - pkgconfig
+        - autoconf
+        - automake
+        - libtool
+        - gettext
+        - toolchain
+        - libogg 1.3.*
+    run:
+        - libogg 1.3.*
+test:
+    commands:
+        - test -f $PREFIX/lib/libFLAC.la
+        - test -f $PREFIX/lib/libFLAC++.la
+        - test -f $PREFIX/bin/flac
+        - test -f $PREFIX/bin/metaflac
+        - test -f $PREFIX/lib/libFLAC.so
+        - test -f $PREFIX/lib/libFLAC++.so
+    requires: ''
+about:
+    description: Free Lossless Audio Codec.
+    doc_url: https://wiki.xiph.org/
+    home: https://www.xiph.org/
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: COPYING.Xiph
+    summary: Flac audio format
+extra:
+    recipe-maintainers:
+        - dschreij

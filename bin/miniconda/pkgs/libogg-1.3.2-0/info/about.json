@@ -1,0 +1,7 @@
+{
+  "description": "OGG media container. This is the native format and the recommended container\nfor Xiph codecs.\n",
+  "doc_url": "https://wiki.xiph.org/",
+  "home": "https://www.xiph.org/",
+  "license": "BSD3",
+  "summary": "OGG media container"
+}

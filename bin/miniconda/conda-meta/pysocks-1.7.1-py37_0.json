@@ -1,0 +1,47 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/pysocks-1.7.1-py37_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/LICENSE",
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/PySocks-1.7.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/__pycache__/socks.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/sockshandler.cpython-37.pyc",
+    "lib/python3.7/site-packages/socks.py",
+    "lib/python3.7/site-packages/sockshandler.py"
+  ],
+  "fn": "pysocks-1.7.1-py37_0.conda",
+  "legacy_bz2_md5": "ff439b77e46862803e5264c07a5c8cbd",
+  "legacy_bz2_size": 30853,
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/pysocks-1.7.1-py37_0",
+    "type": 1
+  },
+  "md5": "89737ce4b1f1270da0cf2545bb65eb5a",
+  "name": "pysocks",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/pysocks-1.7.1-py37_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "pysocks==1.7.1=py37_0",
+  "sha256": "0bdfdaeec873176cbe07186dc3cdb580d6d56a222dbbedb1d729f07414fc9ce8",
+  "size": 31312,
+  "subdir": "linux-64",
+  "timestamp": 1569264610199,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pysocks-1.7.1-py37_0.conda",
+  "version": "1.7.1"
+}

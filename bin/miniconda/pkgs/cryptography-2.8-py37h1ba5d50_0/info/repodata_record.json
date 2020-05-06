@@ -1,0 +1,30 @@
+{
+  "build": "py37h1ba5d50_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "asn1crypto >=0.21.0",
+    "cffi >=1.8",
+    "idna >=2.1",
+    "libgcc-ng >=7.3.0",
+    "openssl >=1.1.1d,<1.1.2a",
+    "python >=3.7,<3.8.0a0",
+    "six >=1.4.1"
+  ],
+  "features": "",
+  "fn": "cryptography-2.8-py37h1ba5d50_0.conda",
+  "legacy_bz2_md5": "5bf4ff2e9b2d71e4d3e537b95807b92a",
+  "legacy_bz2_size": 626475,
+  "license": "Apache 2.0 or BSD 3-Clause, PSF 2",
+  "license_family": "BSD",
+  "md5": "cc350d10fee44f6e4e86afa859cde472",
+  "name": "cryptography",
+  "sha256": "3f2aaf6f4922d468886975e66ea61fc7e46f3e77b205b8073f72be7d3a3ff1d4",
+  "size": 566593,
+  "subdir": "linux-64",
+  "timestamp": 1571690208325,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cryptography-2.8-py37h1ba5d50_0.conda",
+  "version": "2.8"
+}

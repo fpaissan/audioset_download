@@ -1,0 +1,109 @@
+{
+  "paths": [
+    {
+      "_path": "bin/play",
+      "path_type": "softlink",
+      "sha256": "915e2d979e262c6e03aa1725e0aea005da41cd44038ca0851be9284a33a28cdd",
+      "size_in_bytes": 92544
+    },
+    {
+      "_path": "bin/rec",
+      "path_type": "softlink",
+      "sha256": "915e2d979e262c6e03aa1725e0aea005da41cd44038ca0851be9284a33a28cdd",
+      "size_in_bytes": 92544
+    },
+    {
+      "_path": "bin/sox",
+      "path_type": "hardlink",
+      "sha256": "915e2d979e262c6e03aa1725e0aea005da41cd44038ca0851be9284a33a28cdd",
+      "size_in_bytes": 92544
+    },
+    {
+      "_path": "bin/soxi",
+      "path_type": "softlink",
+      "sha256": "915e2d979e262c6e03aa1725e0aea005da41cd44038ca0851be9284a33a28cdd",
+      "size_in_bytes": 92544
+    },
+    {
+      "_path": "include/sox.h",
+      "path_type": "hardlink",
+      "sha256": "c9530e7a0886facbe995def973cbf5ed139008a9962a01a73ebbf741aab51127",
+      "size_in_bytes": 92953
+    },
+    {
+      "_path": "lib/libsox.a",
+      "path_type": "hardlink",
+      "sha256": "ecbbd51d05b7ea6e8a96ab5e3711dbffc88adc28109524e61e7e38bf0f79fdeb",
+      "size_in_bytes": 1505414
+    },
+    {
+      "_path": "lib/libsox.so",
+      "path_type": "softlink",
+      "sha256": "d677631dbfbc51e82f50603b7242f7d2b6afd9be5aaaa48494fd8ff87d1e4540",
+      "size_in_bytes": 726032
+    },
+    {
+      "_path": "lib/libsox.so.3",
+      "path_type": "softlink",
+      "sha256": "d677631dbfbc51e82f50603b7242f7d2b6afd9be5aaaa48494fd8ff87d1e4540",
+      "size_in_bytes": 726032
+    },
+    {
+      "_path": "lib/libsox.so.3.0.0",
+      "path_type": "hardlink",
+      "sha256": "d677631dbfbc51e82f50603b7242f7d2b6afd9be5aaaa48494fd8ff87d1e4540",
+      "size_in_bytes": 726032
+    },
+    {
+      "_path": "lib/pkgconfig/sox.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "a4507bfc5654ed05066b764e28f95193abffcd7ae20ffab07622565e37d5e705",
+      "size_in_bytes": 317
+    },
+    {
+      "_path": "share/man/man1/play.1",
+      "path_type": "softlink",
+      "sha256": "3c9181097d560fc066fddbb4291ff7ef289e7c6e93bee74475a05387a046e278",
+      "size_in_bytes": 149533
+    },
+    {
+      "_path": "share/man/man1/rec.1",
+      "path_type": "softlink",
+      "sha256": "3c9181097d560fc066fddbb4291ff7ef289e7c6e93bee74475a05387a046e278",
+      "size_in_bytes": 149533
+    },
+    {
+      "_path": "share/man/man1/sox.1",
+      "path_type": "hardlink",
+      "sha256": "3c9181097d560fc066fddbb4291ff7ef289e7c6e93bee74475a05387a046e278",
+      "size_in_bytes": 149533
+    },
+    {
+      "_path": "share/man/man1/soxi.1",
+      "path_type": "hardlink",
+      "sha256": "7dc24386545df9fdf60f8e2f668901e8553b3607afe57c9512de32a3d4f37867",
+      "size_in_bytes": 3236
+    },
+    {
+      "_path": "share/man/man3/libsox.3",
+      "path_type": "hardlink",
+      "sha256": "a86f0668c7b64b53158f34924cc15987c9115582c9a70ddaacbdf2a433cfbbed",
+      "size_in_bytes": 15293
+    },
+    {
+      "_path": "share/man/man7/soxeffect.7",
+      "path_type": "softlink",
+      "sha256": "3c9181097d560fc066fddbb4291ff7ef289e7c6e93bee74475a05387a046e278",
+      "size_in_bytes": 149533
+    },
+    {
+      "_path": "share/man/man7/soxformat.7",
+      "path_type": "hardlink",
+      "sha256": "d05aad057d34214f0b33288f9c846a1e50977e301e679fd0ee42c63816fa462f",
+      "size_in_bytes": 27398
+    }
+  ],
+  "paths_version": 1
+}

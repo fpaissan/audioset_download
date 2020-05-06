@@ -1,0 +1,13 @@
+{
+  "cxx_compiler_version": "7.3.0",
+  "bzip2": "1.0",
+  "libffi": "3.2",
+  "zlib": "1.2",
+  "xz": "5",
+  "tk": "8.6",
+  "c_compiler": "gcc",
+  "openssl": "1.1.1",
+  "cxx_compiler": "gxx",
+  "c_compiler_version": "7.3.0",
+  "sqlite": "3"
+}

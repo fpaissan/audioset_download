@@ -1,0 +1,26 @@
+{
+  "build": "py37h7b6447c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "python >=3.7,<3.8.0a0",
+    "yaml >=0.1.7,<0.2.0a0"
+  ],
+  "features": "",
+  "fn": "ruamel_yaml-0.15.87-py37h7b6447c_0.conda",
+  "legacy_bz2_md5": "c6c2c16bc38d4e6fdd3563abd7d26362",
+  "legacy_bz2_size": 277836,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "ec84cc25993d5411ca6437049f83986b",
+  "name": "ruamel_yaml",
+  "sha256": "8e90ff8ea312e3807aad044170fa5aedfb05929b5a23f8182153211a50333943",
+  "size": 262250,
+  "subdir": "linux-64",
+  "timestamp": 1576853112471,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ruamel_yaml-0.15.87-py37h7b6447c_0.conda",
+  "version": "0.15.87"
+}

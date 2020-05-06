@@ -1,0 +1,76 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/pyopenssl-19.1.0-python_3.7-on-linux_64, last modified Wed Nov 20 16:10:16 2019
+# ------------------------------------------------
+
+package:
+    name: pyopenssl
+    version: 19.1.0
+source:
+    sha256: 9a24494b2602aaf402be5c9e30a0b82d4a5c67528fe8fb475e3f3bc00dd69507
+    url: https://pypi.io/packages/source/p/pyOpenSSL/pyOpenSSL-19.1.0.tar.gz
+build:
+    number: '0'
+    script: /tmp/build/80754af9/pyopenssl_1574266519742/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.10.16 0
+        - certifi 2019.9.11 py37_0
+        - libedit 3.1.20181209 hc058e9b_0
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1d h7b6447c_3
+        - pip 19.3.1 py37_0
+        - python 3.7.5 h0371630_0
+        - readline 7.0 h7b6447c_5
+        - setuptools 41.6.0 py37_0
+        - sqlite 3.30.1 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - wheel 0.33.6 py37_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - cryptography >=2.8
+        - python >=3.7,<3.8.0a0
+        - six >=1.5.2
+test:
+    imports:
+        - OpenSSL
+        - OpenSSL.SSL
+        - OpenSSL.crypto
+        - OpenSSL.rand
+about:
+    description: 'pyOpenSSL is a high-level wrapper around a subset of the OpenSSL
+        library.
+
+        It includes:
+
+        -SSL.Connection objects, wrapping the methods of Python''s portable sockets
+
+        -Callbacks written in Python
+
+        -Extensive error-handling mechanism, mirroring OpenSSL''s error codes
+
+        and much more.
+
+        '
+    dev_url: https://github.com/pyca/pyopenssl
+    doc_source_url: https://github.com/pyca/pyopenssl/blob/master/doc/index.rst
+    doc_url: https://pyopenssl.readthedocs.org/en/stable/
+    home: https://github.com/pyca/pyopenssl
+    license: Apache 2.0
+    license_family: Apache
+    license_file: LICENSE
+    summary: Python wrapper module around the OpenSSL library
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - goanpeca
+        - mingwandroid
+        - nehaljwani

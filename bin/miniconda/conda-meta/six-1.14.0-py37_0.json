@@ -1,0 +1,45 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/six-1.14.0-py37_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/__pycache__/six.cpython-37.pyc",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/LICENSE",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/METADATA",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/RECORD",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/six-1.14.0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/six.py"
+  ],
+  "fn": "six-1.14.0-py37_0.conda",
+  "legacy_bz2_md5": "fb6def8ed7c6461756dd78429faadcf2",
+  "legacy_bz2_size": 27674,
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/six-1.14.0-py37_0",
+    "type": 1
+  },
+  "md5": "dab70d0de57e545e56d7f3622fa61ccb",
+  "name": "six",
+  "package_tarball_full_path": "/media/psf/Dropbox/__wannaBeRS/Codes/FBK/audioset_ds/bin/miniconda/pkgs/six-1.14.0-py37_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "six==1.14.0=py37_0",
+  "sha256": "e14e198af02998c700ab0fe8d3b790be03592829bf25f14c8a21171299472e0e",
+  "size": 27152,
+  "subdir": "linux-64",
+  "timestamp": 1580149912348,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/six-1.14.0-py37_0.conda",
+  "version": "1.14.0"
+}

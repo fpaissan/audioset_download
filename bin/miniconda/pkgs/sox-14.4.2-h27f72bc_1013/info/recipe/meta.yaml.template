@@ -1,0 +1,53 @@
+{% set version = "14.4.2" %}
+
+package:
+  name: sox
+  version: {{ version }}
+
+source:
+  url: http://sourceforge.net/projects/sox/files/sox/{{ version }}/sox-{{ version }}.tar.gz
+  md5: d04fba2d9245e661f245de0577f48a33
+
+build:
+  number: 1013
+  detect_binary_files_with_prefix: true
+  skip: true  # [win]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - libpng
+    - zlib
+    - xz
+    - lame  # [not win]
+    - mad  # [not win]    
+
+  run:
+    - libpng
+    - zlib
+    - xz
+    - lame  # [not win]
+    - mad  # [not win]
+
+test:
+  commands:
+    - test -e $PREFIX/include/sox.h      # [unix]
+    - test -e $PREFIX/lib/libsox.a       # [unix]
+    - test -e $PREFIX/lib/libsox.so      # [linux]
+    - test -e $PREFIX/lib/libsox.dylib   # [osx]
+    - otool -L $PREFIX/lib/libsox.dylib  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
+    - sox --help |grep "FILE FORMATS" | grep mp3  # [not win]
+
+about:
+  home: http://sox.sourceforge.net/
+  license: LGPLv2
+  summary: A cross-platform command line utility that can convert various formats of computer audio files in to other formats.
+
+extra:
+  recipe-maintainers:
+    - 183amir
+    - alexbw
+    - sdvillal

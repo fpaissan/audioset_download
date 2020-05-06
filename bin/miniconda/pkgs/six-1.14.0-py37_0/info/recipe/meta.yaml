@@ -1,0 +1,66 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/six-1.14.0-python_3.7-on-linux_64, last modified Mon Jan 27 18:26:22 2020
+# ------------------------------------------------
+
+package:
+    name: six
+    version: 1.14.0
+source:
+    sha256: 236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a
+    url: https://pypi.io/packages/source/s/six/six-1.14.0.tar.gz
+build:
+    number: '0'
+    script: /tmp/build/80754af9/six_1580149835755/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_/bin/python
+        -m pip install --no-deps --ignore-installed .
+    string: py37_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.11.27 0
+        - certifi 2019.11.28 py37_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libedit 3.1.20181209 hc058e9b_0
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1d h7b6447c_3
+        - pip 19.3.1 py37_0
+        - python 3.7.6 h0371630_2
+        - readline 7.0 h7b6447c_5
+        - setuptools 44.0.0 py37_0
+        - sqlite 3.30.1 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - wheel 0.33.6 py37_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - six
+about:
+    description: 'Six provides simple utilities for wrapping over differences between
+
+        Python 2 and Python 3. It is intended to support codebases that work on
+
+        both Python 2 and 3 without modification. six consists of only one Python
+
+        file, so it is painless to copy into a project.
+
+        '
+    dev_url: https://github.com/benjaminp/six
+    doc_url: https://six.readthedocs.io/
+    home: https://six.readthedocs.io/
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: Python 2 and 3 compatibility utilities
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - ocefpaf

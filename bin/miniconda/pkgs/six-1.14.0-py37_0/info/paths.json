@@ -1,0 +1,53 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.7/site-packages/__pycache__/six.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "f88d9b6021d0a7dcbe7e1cecfbbc0026e7f49ad48a2f1b4a78bd6526fbfc0332",
+      "size_in_bytes": 26830
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "8bb850c565aa389fdc16f3a46965ad23d82adff60f2393fc2762b63185e8e6c9",
+      "size_in_bytes": 1066
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "9c401cf61b80b67d770676b7310d594acc28c9a57b18c25d29f1a5b87157e035",
+      "size_in_bytes": 1795
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "174e132bf7f233b156bba557bd968ef83c4c342a07d4b312d0ba6d5c1416c2a3",
+      "size_in_bytes": 560
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+      "size_in_bytes": 110
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six-1.14.0.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "lib/python3.7/site-packages/six.py",
+      "path_type": "hardlink",
+      "sha256": "43a5af1176750c6100480a370863422642afdad3f2f3191298af951c4f4f6080",
+      "size_in_bytes": 34074
+    }
+  ],
+  "paths_version": 1
+}
