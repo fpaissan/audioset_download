@@ -569,7 +569,7 @@ def extract1sec(ffmpeg_path, video_filepath, audio_filepath):
         return
 
     # print(video_filepath, audio_filepath)
-
+    
     # Extract video: ffmpeg -i -0DdlOuIFUI_50000_60000.mp4 -ss 00:00:01 -t 1 -async 1
     args = ['ffmpeg'] + ['-i', video_filepath, '-ss', '00:00:' + stupid_check(selected_sec), '-t', '1', '-async', '1', video_filepath, '-y']
     print("VIDEO CUTTING COMMAND: ", ' '.join(args))
@@ -578,6 +578,9 @@ def extract1sec(ffmpeg_path, video_filepath, audio_filepath):
 
     # Extract audio
     quit()
+    args = ['ffmpeg'] + ['-i', video_filepath, '-ss', '00:00:' + stupid_check(selected_sec), '-t', '1', '-async', '1', video_filepath, '-y']
+    print("VIDEO CUTTING COMMAND: ", ' '.join(args))
+    run_command(args)
 
     # ffmpeg -i --aaILOrkII_200000_210000.flac -strict -2 -ss 20 -to 40 -c copy 1sec--aaILOrkII_200000_210000.flac
 
