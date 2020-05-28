@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BIN_DIR="/scratch/gcerutti/bin"
+BIN_DIR="bin"
 CONDA_DIR="$BIN_DIR/miniconda"
 CONDA_BIN_DIR="$CONDA_DIR/bin"
 

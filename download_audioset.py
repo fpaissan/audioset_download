@@ -31,6 +31,8 @@ from validation import validate_audio, validate_video
 LOGGER = logging.getLogger('audiosetdl')
 LOGGER.setLevel(logging.ERROR)
 
+VGGSOUND = True
+
 EVAL_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/eval_segments.csv'
 BALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/balanced_train_segments.csv'
 UNBALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/unbalanced_train_segments.csv'
@@ -730,7 +732,10 @@ def download_subset_videos(subset_path, data_dir, ffmpeg_path, ffprobe_path,
                 # Skip commented lines
                 if row[0][0] == '#':
                     continue
-                ytid, ts_start, ts_end = row[0], float(row[1]), float(row[2])
+                if(not VGGSOUND):
+                    ytid, ts_start, ts_end = row[0], float(row[1]), float(row[2])
+                else:
+                    ytid, ts_start, ts_end = row[0], float(row[1]), float(row[1]) + 1
 
                 # Skip files that already have been downloaded
                 media_filename = get_media_filename(ytid, ts_start, ts_end)
@@ -840,7 +845,13 @@ def download_random_subset_files(subset_url, dataset_dir, ffmpeg_path, ffprobe_p
     pool = mp.Pool(num_workers)
     try:
         for idx, row in enumerate(subset_data):
-            worker_args = [row[0], float(row[1]), float(row[2]), data_dir, ffmpeg_path, ffprobe_path]
+
+            if(not VGG_SOUND):
+                worker_args = [row[0], float(row[1]), float(row[2]), data_dir, ffmpeg_path, ffprobe_path]
+            else:
+                worker_args = [row[0], float(row[1]), float(row[1]) + 1, data_dir, ffmpeg_path, ffprobe_path]
+
+            
             pool.apply_async(partial(segment_mp_worker, **ffmpeg_cfg), worker_args)
             # Run serially
             #segment_mp_worker(*worker_args, **ffmpeg_cfg)
