@@ -14,6 +14,7 @@ import shutil
 import sys
 import traceback as tb
 import urllib.request
+
 from functools import partial
 
 import multiprocessing_logging
@@ -193,7 +194,7 @@ def parse_arguments():
                         default=False,
                         help='Prints verbose info to stdout')
 
-    parser.add_argument('data_dir',
+    parser.add_argument('--data-dir',
                         action='store',
                         type=str,
                         help='Path to directory where AudioSet data will be stored')
@@ -663,7 +664,6 @@ def download_subset_videos(subset_path, data_dir, ffmpeg_path, ffprobe_path,
                 if row[0][0] == '#':
                     continue
                 ytid, ts_start, ts_end = row[0], float(row[1]), float(row[2])
-
                 # Skip files that already have been downloaded
                 media_filename = get_media_filename(ytid, ts_start, ts_end)
                 video_filepath = os.path.join(data_dir, 'video', media_filename + '.' + ffmpeg_cfg.get('video_format', 'mp4'))

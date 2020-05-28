@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BIN_DIR="./bin"
+BIN_DIR="/scratch/gcerutti/bin"
 CONDA_DIR="$BIN_DIR/miniconda"
 CONDA_BIN_DIR="$CONDA_DIR/bin"
 
@@ -11,10 +11,11 @@ mkdir -p $BIN_DIR
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $BIN_DIR/Miniconda3-latest-Linux-x86_64.sh
 bash $BIN_DIR/Miniconda3-latest-Linux-x86_64.sh -p $CONDA_DIR -b
 
+# GM 404 not found
 # Install ffmpeg (with OpenSSL support)
-wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
-tar xf ffmpeg-release-64bit-static.tar.xz
-mv ffmpeg-3.3.4-64bit-static $BIN_DIR/ffmpeg
+#wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
+#tar xf ffmpeg-release-64bit-static.tar.xz
+#mv ffmpeg-3.3.4-64bit-static $BIN_DIR/ffmpeg
 
 # Install conda dependencies
 $CONDA_BIN_DIR/conda install -c conda-forge -y sox
