@@ -955,12 +955,12 @@ def download_audioset(data_dir, ffmpeg_path, ffprobe_path, eval_segments_path,
     multiprocessing_logging.install_mp_handler()
     LOGGER.debug('Initialized logging.')
 
-    download_subset(eval_segments_path, data_dir, ffmpeg_path, ffprobe_path,
-                    num_workers, **ffmpeg_cfg)
+    # download_subset(eval_segments_path, data_dir, ffmpeg_path, ffprobe_path,
+    #                 num_workers, **ffmpeg_cfg)
     download_subset(balanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
                     num_workers, **ffmpeg_cfg)
-    download_subset(unbalanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
-                    num_workers, **ffmpeg_cfg)
+    # download_subset(unbalanced_train_segments_path, data_dir, ffmpeg_path, ffprobe_path,
+    #                 num_workers, **ffmpeg_cfg)
 
 
 if __name__ == '__main__':
