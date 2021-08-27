@@ -1,0 +1,1 @@
+python download_audioset.py --data-dir /vggsound

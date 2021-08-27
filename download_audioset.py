@@ -33,9 +33,9 @@ LOGGER.setLevel(logging.ERROR)
 
 VGGSOUND = True
 
-EVAL_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/eval_segments.csv'
-BALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/balanced_train_segments.csv'
-UNBALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/unbalanced_train_segments.csv'
+# EVAL_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/eval_segments.csv'
+# BALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/balanced_train_segments.csv'
+# UNBALANCED_TRAIN_URL = 'http://storage.googleapis.com/us_audioset/youtube_corpus/v1/csv/unbalanced_train_segments.csv'
 
 
 def parse_arguments():
@@ -54,7 +54,7 @@ def parse_arguments():
                         dest='ffmpeg_path',
                         action='store',
                         type=str,
-                        default='./bin/ffmpeg/ffmpeg',
+                        default='/usr/bin/ffmpeg',
                         help='Path to ffmpeg executable')
 
     parser.add_argument('-fp',
@@ -62,7 +62,7 @@ def parse_arguments():
                         dest='ffprobe_path',
                         action='store',
                         type=str,
-                        default='./bin/ffmpeg/ffprobe',
+                        default='/usr/bin/ffprobe',
                         help='Path to ffprobe executable')
 
     parser.add_argument('-e',
@@ -70,7 +70,7 @@ def parse_arguments():
                         dest='eval_segments_path',
                         action='store',
                         type=str,
-                        default=EVAL_URL,
+                        default="",
                         help='Path to evaluation segments file')
 
     parser.add_argument('-b',
@@ -78,7 +78,7 @@ def parse_arguments():
                         dest='balanced_train_segments_path',
                         action='store',
                         type=str,
-                        default=BALANCED_TRAIN_URL,
+                        default="VGGSound/vggsound.csv",
                         help='Path to balanced train segments file')
 
     parser.add_argument('-u',
@@ -86,7 +86,7 @@ def parse_arguments():
                         dest='unbalanced_train_segments_path',
                         action='store',
                         type=str,
-                        default=UNBALANCED_TRAIN_URL,
+                        default="",
                         help='Path to unbalanced train segments file')
 
     parser.add_argument('-ac',
@@ -691,7 +691,7 @@ def download_subset_file(subset_url, dataset_dir):
             f.write(subset_data)
 
     return subset_path
-
+5
 
 def download_subset_videos(subset_path, data_dir, ffmpeg_path, ffprobe_path,
                            num_workers, **ffmpeg_cfg):
